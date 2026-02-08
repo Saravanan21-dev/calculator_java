@@ -25,7 +25,7 @@ jobs:
 
       # Compile your Java files (adjust path if needed)
       - name: Compile Java sources
-        run: javac -d out $(find src -name "*.java")
+        run: javac -d out $(find . -name "*.java")
 
       # Run SonarQube scan
       - name: SonarQube Scan
